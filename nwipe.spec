@@ -1,6 +1,6 @@
 Summary:	A secure disk eraser
 Name:		nwipe
-Version:	0.34
+Version:	0.35
 Release:	1
 License:	GPLv2
 Group:		File tools
@@ -11,10 +11,10 @@ BuildRequires:	pkgconfig(libconfig)
 BuildRequires:	pkgconfig(libparted)
 BuildRequires:	pkgconfig(ncurses)
 
-#Requires:	hdparm
+Requires:	hdparm
 # optional
 # used to determine the bus type, i.e. ATA, USB etc
-#Recommends:	coreutils
+Recommends:	coreutils
 # used to provides SMBIOS/DMI host data to stdout or the log file
 Recommends:	dmidecode
 # used to obtains serial number information for supported USB to IDE/SATA adapters
@@ -49,5 +49,4 @@ autoreconf -fiv
 
 %install
 %make_install 
-#DESTDIR=%{buildroot} LDFLAGS="-lncurses -lpanel"
 
