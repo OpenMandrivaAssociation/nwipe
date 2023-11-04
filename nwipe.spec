@@ -5,7 +5,6 @@ Release:	1
 License:	GPLv2
 Group:		File tools
 URL:		https://github.com/martijnvanbrummelen/nwipe
-#URL:		https://github.com/astrgl/dnfdrake
 Source0:	https://github.com/martijnvanbrummelen/nwipe/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(libconfig)
 BuildRequires:	pkgconfig(libparted)
@@ -42,7 +41,6 @@ hardware support.
 %autosetup -p1
 
 %build
-#export CFLAGS="%{optflags} -std=c99 -D_XOPEN_SOURCE=500"
 autoreconf -fiv
 %configure
 %make_build
