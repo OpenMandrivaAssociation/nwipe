@@ -26,14 +26,14 @@ both a command line tool without a GUI or with a ncurses GUI.
 
 nwipe is a fork of the dwipe command originally used by Darik's Boot and Nuke
 (DBAN). nwipe was created out of a need to run the DBAN dwipe command outside
-of DBAN, in order to allow its use with any host distribution, thus giving better
-hardware support.
+of DBAN, in order to allow its use with any host distribution, thus giving
+better hardware support.
 
 %files
 %license COPYING
 %doc CHANGELOG.md README.md
 %{_bindir}/%{name}
-%{_mandir}/man1/%{name}.1.*
+%{_mandir}/man8/%{name}.8.*
 
 #---------------------------------------------------------------------------
 
