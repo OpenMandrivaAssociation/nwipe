@@ -1,6 +1,6 @@
 Summary:	A secure disk eraser
 Name:		nwipe
-Version:	0.37
+Version:	0.38
 Release:	1
 License:	GPLv2
 Group:		File tools
